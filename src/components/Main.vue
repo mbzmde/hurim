@@ -1,16 +1,13 @@
 <template>
-    <div>
-        <div class="main_area">
-            <div class="img_box">
-                <img src="../assets/images/main.jpg" alt="메인이미지">
-                <div class="txt_box">
-                    <p class="date">08 / 24</p> 
-                    <p class="tit">승찬 · 지원 결혼합니다</p>
-                    <p class="location">주안 그랜드하우스</p>
-                </div>
+    <div class="main_area">
+        <div class="img_box">
+            <img src="../assets/images/main.jpg" alt="메인이미지">
+            <div class="txt_box">
+                <p class="date">08 / 24</p> 
+                <p class="tit">승찬 · 지원 결혼합니다</p>
+                <p class="location">주안 그랜드하우스</p>
             </div>
         </div>
-        
     </div>
     <div class="address_wrap">
         <p class="address_date">2024. 08. 24. 토요일 · 오후 12시 30분</p>
