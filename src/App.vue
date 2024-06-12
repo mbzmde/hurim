@@ -2,6 +2,7 @@
 import MainComponent from './components/Main.vue';
 import ImgArea from './components/ImgArea.vue';
 import StoryArea from './components/StoryArea.vue';
+import Calendar from './components/Calendar.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import StoryArea from './components/StoryArea.vue';
     <MainComponent />
     <ImgArea />
     <StoryArea />
+    <Calendar />
   </div>
 </template>
 
