@@ -3,6 +3,7 @@ import MainComponent from './components/Main.vue';
 import ImgArea from './components/ImgArea.vue';
 import StoryArea from './components/StoryArea.vue';
 import Calendar from './components/Calendar.vue';
+import Addess from './components/Addess.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Calendar from './components/Calendar.vue';
     <ImgArea />
     <StoryArea />
     <Calendar />
+    <Addess />
   </div>
 </template>
 

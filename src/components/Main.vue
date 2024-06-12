@@ -4,14 +4,14 @@
             <img src="../assets/images/main.jpg" alt="메인이미지">
             <div class="txt_box">
                 <p class="date">08 / 24</p> 
-                <p class="tit">승찬 · 지원 결혼합니다</p>
-                <p class="location">주안 그랜드하우스</p>
+                <p class="title">승찬 · 지원 결혼합니다</p>
+                <p class="location">주안 그랜드하우스 7층 단독홀</p>
             </div>
         </div>
     </div>
     <div class="address_wrap">
-        <p class="address_date">2024. 08. 24. 토요일 · 오후 12시 30분</p>
-        <p class="address">인천그랜드하우스</p>
+        <p class="address_date">2024. 08. 24. 토요일 · 오후 4시</p>
+        <p class="address">주안 그랜드 하우스 7층 단독홀</p>
     </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
     .main_area .img_box img{position:absolute;top:0;left:0;right:0;bottom:0;max-height:100%;max-width:100%;min-height:100%;min-width:100%;width:0;height:0;margin:auto;object-fit:cover;}
     .main_area .txt_box{position:absolute;bottom:40px;left:40px;color:#fff;}
     .main_area .txt_box .date{font-size:32px;font-weight:700;}
-    .main_area .txt_box .tit{margin-top:24px;font-size:20px;font-weight:500;}
+    .main_area .txt_box .title{margin-top:24px;font-size:20px;font-weight:500;}
     .main_area .txt_box .location{margin-top:16px;font-size:20px;}
     .address_wrap{margin:48px 55px auto;text-align:center;}
     .address_wrap .address_date{font-size:20px;color:#000;}

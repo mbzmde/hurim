@@ -1,6 +1,6 @@
 <template>
     <section class="story_area">
-        <h2 class="tit">하나님의 사랑을 주위에 나누며 <br> 살아가는 가정이 되겠습니다.</h2>
+        <h2 class="title">하나님의 사랑을 주위에 나누며 <br> 살아가는 가정이 되겠습니다.</h2>
         <div class="story">
             <p>
                 처음 만났던 날, <br>
@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
     .story_area{width:100%;margin-top:32px;padding:8px;background:url(../assets/images/bg1.jpg) no-repeat 50%;background-size:cover;text-align:center;box-shadow:0px 0px 15px 5px #ecebe9;}
-    .story_area .tit{font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
+    .story_area .title{font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
     .story_area .story p{padding-top:24px;font-size:16px;line-height:36px;color:#393631;}
     .story_area .name{padding-top:24px;}
 </style>

@@ -1,7 +1,7 @@
 <template>
     <section class="img_area">
         <p class="dot">/</p>
-        <h2 class="tit">그 어떤 순간에도 하나님 안에서 <br> 행복하게 잘 살겠습니다.</h2>
+        <h2 class="title">그 어떤 순간에도 하나님 안에서 <br> 행복하게 잘 살겠습니다.</h2>
         <div class="img_wrap">
             <div class="gallery large">
                 <a href="#">
@@ -76,7 +76,7 @@ export default {
 <style scoped>
     .img_area{width:100%;padding:0 48px;}
     .img_area .dot{padding-top:24px;text-align:center;}
-    .img_area .tit{padding-top:24px;font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
+    .img_area .title{padding-top:24px;font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
     .img_area .img_wrap .gallery{display:flex;gap:8px;}
     .img_area .img_wrap .gallery.large{margin-top:8px;}
     .img_area .img_wrap .gallery.large > a{border-radius:16px 0 0 0;}
