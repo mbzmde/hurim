@@ -58,79 +58,8 @@
                     </div>
                 </a>
             </div>
-            <div class="gallery large">
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <div class="gallery small">
-                    <a href="#">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="gallery small2">
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery small2">
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery large">
-                <div class="gallery small">
-                    <a href="#">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </a>
-                </div>
-                <a href="#">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </a>
-            </div>
         </div>
+        <p class="dot">/</p>
     </section>
 </template>
 
