@@ -4,6 +4,8 @@ import ImgArea from './components/ImgArea.vue';
 import StoryArea from './components/StoryArea.vue';
 import Calendar from './components/Calendar.vue';
 import Addess from './components/Addess.vue';
+import Communication from './components/Communication.vue';
+import Account from './components/Account.vue';
 </script>
 
 <template>
@@ -13,6 +15,8 @@ import Addess from './components/Addess.vue';
     <StoryArea />
     <Calendar />
     <Addess />
+    <Communication />
+    <Account />
   </div>
 </template>
 
