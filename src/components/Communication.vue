@@ -5,7 +5,7 @@
         <div class="user_list">
             <h3>신랑 측</h3>
             <ul>
-                <li>
+                <li v-for="(list, communi) in list" :key="communi">
                     <p class="user_name">신랑 · 노승찬</p>
                     <div class="communication_wrap">
                         <a href="#">
