@@ -31,7 +31,7 @@ export default {
         var year = date.getFullYear();
 
         var holidays = [
-            {month: 7, day: 15, name: '광복절'},
+            {month:8, day:24, name: '결혼식'},
         ];
 
         function initCalender(olddate, newdate) {
@@ -79,14 +79,11 @@ export default {
                         if (firstDay.getDate() === date.getDate() && firstDay.getMonth() === date.getMonth() && firstDay.getFullYear() === date.getFullYear()){
                             cell.className = 'today';
                         }
-                        if (firstDay.getDay() === 1) { // 일요일
+                        if (firstDay.getDay() === 1) {
                             cell.classList.add('sunday');
                         }
-                        if (firstDay.getDay() === 0) { // 토요일
+                        if (firstDay.getDay() === 0) { 
                             cell.classList.add('saturday');
-                        }
-                        if (firstDay.getDay() === 4) { // test
-                            cell.classList.add('test');
                         }
 
                         // 공휴일 확인
@@ -127,6 +124,6 @@ export default {
     #calendar caption{font-size:20px;color:#393631;}
     #calendar thead th{padding:20px;font-size:16px;line-height:16px;color:#393631;}
     #calendar tbody td{padding:20px;font-size:16px;line-height:16px;color:#393631;}
-    #calendar .test{border:1px solid;}
+    .holidays{background:red;}
     
 </style>
