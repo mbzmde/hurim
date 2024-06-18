@@ -5,35 +5,13 @@
         <div class="user_list">
             <h3>신랑 측</h3>
             <ul>
-                <li v-for="(list, communi) in list" :key="communi">
-                    <p class="user_name">신랑 · 노승찬</p>
+                <li v-for="(user, index) in groomSide" :key="index">
+                    <p class="user_name">{{ user.title }} · {{ user.name }}</p>
                     <div class="communication_wrap">
-                        <a href="#">
+                        <a :href="`tel:$(user.phone)`">
                             <span class="call">전화</span>
                         </a>
-                        <a href="#">
-                            <span class="message">문자</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <p class="user_name">아버님 · 노수련</p>
-                    <div class="communication_wrap">
-                        <a href="#">
-                            <span class="call">전화</span>
-                        </a>
-                        <a href="#">
-                            <span class="message">문자</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <p class="user_name">어머님 · 김유미</p>
-                    <div class="communication_wrap">
-                        <a href="#">
-                            <span class="call">전화</span>
-                        </a>
-                        <a href="#">
+                        <a :href="`sms:$(user.phone)`">
                             <span class="message">문자</span>
                         </a>
                     </div>
@@ -43,35 +21,13 @@
         <div class="user_list">
             <h3>신부 측</h3>
             <ul>
-                <li>
-                    <p class="user_name">신부 · 신지원</p>
+                <li v-for="(user, index) in brideSide" :key="index">
+                    <p class="user_name">{{ user.title }} · {{ user.name }}</p>
                     <div class="communication_wrap">
-                        <a href="#">
+                        <a :href="`tel:$(user.phone)`">
                             <span class="call">전화</span>
                         </a>
-                        <a href="#">
-                            <span class="message">문자</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <p class="user_name">아버님 · 신준철</p>
-                    <div class="communication_wrap">
-                        <a href="#">
-                            <span class="call">전화</span>
-                        </a>
-                        <a href="#">
-                            <span class="message">문자</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <p class="user_name">어머님 · 이선경</p>
-                    <div class="communication_wrap">
-                        <a href="#">
-                            <span class="call">전화</span>
-                        </a>
-                        <a href="#">
+                        <a :href="`sms:$(user.phone)`">
                             <span class="message">문자</span>
                         </a>
                     </div>
@@ -82,11 +38,23 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
     setup () {
-        
+        const groomSide = ref([
+            {title: '신랑', name: '노승찬', phone: '010-6218-0438'},
+            {title: '아버님', name: '노수련', phone: '010-5247-9572'},
+            {title: '어머님', name: '김유미', phone: '010-3317-0434'},
+        ]);
 
-        return {}
+        const brideSide = ref([
+            {title: '신부', name: '신지원', phone: '010-9975-0173'},
+            {title: '아버님', name: '신준철', phone: '010-4829-2116'},
+            {title: '어머님', name: '이선경', phone: '010-4029-2116'},
+        ])
+
+        return {groomSide,brideSide}
     }
 }
 </script>
@@ -98,7 +66,7 @@ export default {
     .communication_area .user_list{padding-top:16px;}
     .communication_area .user_list h3{font-size:20px;line-height:36px;color:#393631;text-align:center;}
     .communication_area .user_list ul{padding-top:16px;}
-    .communication_area .user_list ul li{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 16px 24px;border-radius:16px;background-color:#fff;}
+    .communication_area .user_list ul li{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 16px 24px;border:2px solid #F2EEE8;border-radius:16px;background-color:#fff;}
     .communication_area .user_list ul li + li{margin-top:16px;}
     .communication_area .user_list ul li .user_name{font-size:16px;font-weight:500;color:#000000;}
     .communication_area .user_list ul li .communication_wrap{display:flex;gap:9px;align-items:center;}

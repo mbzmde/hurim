@@ -52,12 +52,12 @@ export default {
     .txt_address p{font-size:20px;line-height:32px;color:#393631;text-align:center;}
     .txt_address p span{font-weight:700;}
     .txt_address .btn_wrap{display:flex;align-items:center;justify-content:center;padding-top:24px;}
-    .txt_address .btn_address_copy{padding:8px 20px;font-size:16px;line-height:32px;border:0;border-radius:16px;background:tan;}
+    .txt_address .btn_address_copy{padding:8px 20px;font-size:16px;line-height:32px;border:0;border-radius:16px;background:#F2EEE8;}
     .load_list_wrap{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
-    .load_list_wrap .directions_box{position:relative;flex:1;height:160px;border-radius:24px;background-color:#fff;}
-    .load_list_wrap .directions_box a{display:block;padding:116px 20px 20px;text-decoration:none;}
+    .load_list_wrap .directions_box{position:relative;flex:1;height:160px;border:2px solid #F2EEE8;border-radius:24px;background-color:#fff;}
+    .load_list_wrap .directions_box a{display:block;padding:116px 20px 20px;}
     .load_list_wrap .directions_box .img_box{position:absolute;top:20px;left:20px;width:56px;height:56px;}
-    .load_list_wrap .directions_box .img_box img{background:gray;border-radius:16px;}
+    .load_list_wrap .directions_box .img_box img{background:gray;border:2px solid #E7DED0;border-radius:16px;}
     .load_list_wrap .directions_box .get_directions{position:relative;font-size:20px;line-height:20px;color:#393631;}
     .load_list_wrap .directions_box .get_directions::after{content:'';position:absolute;bottom:0;right:0;width:24px;height:24px;background:url(../assets/images/ico_arrow.jpg) no-repeat 50% 50%;background-size:contain;}
 </style>

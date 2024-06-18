@@ -1,7 +1,18 @@
 @import './base.css';
 
 #app {
-  background: #F2EEE8;
+  position:relative;
+  background:url(../assets/images/bg.png) no-repeat;
+  background-size:cover;
+  isolation:isolate;
+}
+#app::after{
+  content:'';
+  position:absolute;
+  background: white;
+  z-index: -1;
+  inset: 0;
+  opacity: .4;
 }
 
 a,

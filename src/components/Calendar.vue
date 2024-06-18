@@ -62,11 +62,11 @@ export default {
             tbody.innerHTML = '';
             caption.textContent = year + '년 ' + (month + 3) + '월';
 
-            while (firstDay.getDay() !== 1) {
+            while (firstDay.getDay() !== 2) {
                 firstDay.setDate(firstDay.getDate() - 1);
             }
 
-            while (lastDay.getDay() !== 0) {
+            while (lastDay.getDay() !== 1) {
                 lastDay.setDate(lastDay.getDate() + 1);
             }
 
