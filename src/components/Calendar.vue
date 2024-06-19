@@ -26,12 +26,12 @@ import { onMounted } from 'vue';
 
 export default {
     setup () {
-        var date = new Date();
+        var date = new Date(2024, 5, 1);
         var month = date.getMonth();
         var year = date.getFullYear();
 
         var holidays = [
-            {month:8, day:24, name: '결혼식'},
+            {month:5, day:24, name: '결혼식'},
         ];
 
         function initCalender(olddate, newdate) {
@@ -124,6 +124,10 @@ export default {
     #calendar caption{font-size:20px;color:#393631;}
     #calendar thead th{padding:20px;font-size:16px;line-height:16px;color:#393631;}
     #calendar tbody td{padding:20px;font-size:16px;line-height:16px;color:#393631;}
-    .holidays{background:red;}
+    .holiday{position: absolute;
+    top: -9999px;
+    font-size: 0;
+    height: 0;background:red;}
+    .holiday::before{content:'';width:30px;height:30px;background:tan;position:absolute;}
     
 </style>
