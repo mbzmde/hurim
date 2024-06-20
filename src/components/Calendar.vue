@@ -124,10 +124,10 @@ export default {
     #calendar caption{font-size:20px;color:#393631;}
     #calendar thead th{padding:20px;font-size:16px;line-height:16px;color:#393631;}
     #calendar tbody td{padding:20px;font-size:16px;line-height:16px;color:#393631;}
-    .holiday{position: absolute;
+    /* .holiday{position: absolute;
     top: -9999px;
     font-size: 0;
     height: 0;background:red;}
-    .holiday::before{content:'';width:30px;height:30px;background:tan;position:absolute;}
+    .holiday::before{content:'';width:30px;height:30px;background:tan;position:absolute;} */
     
 </style>
