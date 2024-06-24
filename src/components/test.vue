@@ -54,8 +54,8 @@
         handleSlideChange(slide) {
             this.currentSlide = slide;
         },
-        navigateTo(index) {
-            this.$refs.carousel.navigateTo(index);
+        goToSlide(index) {
+            this.$refs.carousel.updateCurrentPage(index);
         },
     },
   }
@@ -65,26 +65,9 @@
     .carousel__viewport{margin-top:32px;}
     .carousel__slide {display: flex;justify-content: center;align-items: center;}
     .slide_img {width: 100%;height: auto;max-height: 100%;object-fit: cover;}
-    .thumbnails {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.thumbnail {
-  cursor: pointer;
-  margin: 0 5px;
-  border: 2px solid transparent;
-}
-
-.thumbnail.active {
-  border-color: #000;
-}
-
-.thumbnail_img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
+    .thumbnails {display: flex;justify-content: center;margin-top: 10px;}
+    .thumbnail {cursor: pointer;margin: 0 5px;border: 2px solid transparent;}
+    .thumbnail.active {border-color: #000;}
+    .thumbnail_img {width: 50px;height: 50px;object-fit: cover;}
   </style>
   
