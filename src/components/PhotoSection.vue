@@ -17,7 +17,7 @@
       ref="carousel"
     >
       <slide v-for="(slide, index) in slides" :key="index">
-        <img :src="slide.url" :alt="slide.alt" class="photo-section__slide-img">
+        <img v-lazy="slide.url" :alt="slide.alt" class="photo-section__slide-img">
       </slide>
       <template #addons>
         <navigation />
@@ -31,7 +31,7 @@
         :class="['photo-section__thumbnail', { 'photo-section__thumbnail--active': index === currentSlide }]"
         @click="goToSlide(index)"
       >
-        <img :src="slide.url" :alt="slide.alt" class="photo-section__thumbnail-img">
+        <img v-lazy="slide.url" :alt="slide.alt" class="photo-section__thumbnail-img">
       </div>
     </div>
   </section>
