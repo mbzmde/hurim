@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 
@@ -48,6 +49,13 @@ export default {
     Slide,
     Pagination,
     Navigation,
+  },
+  setup() {
+    const carousel = ref(null);
+
+    return {
+      carousel,
+    }
   },
   data() {
     return {
@@ -74,7 +82,8 @@ export default {
       this.currentSlide = slide;
     },
     goToSlide(index) {
-      this.$refs.carousel.updateCurrentPage(index);
+      this.currentSlide = index;
+      this.$refs.carousel.slideTo(index);
     },
   },
 };
