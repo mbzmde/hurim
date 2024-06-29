@@ -748,6 +748,11 @@ fsevents@~2.3.2, fsevents@~2.3.3:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
+fullpage.js@^4.0.22:
+  version "4.0.25"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-4.0.25.tgz#06f77235d7269271aaaca0c6c8216958b4dd6dc7"
+  integrity sha512-bfct64FIHWPSthZXjNETosPeC0QXkJ7OgVmQw1UFSZkGL54VogtmbCoTHH3v+g9h5+UjpMVHAaGNCA4hJ5JRGw==
+
 glob-parent@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-6.0.2.tgz#6d237d99083950c79290f24c7642a3de9a28f9e3"
@@ -1218,6 +1223,13 @@ vue-eslint-parser@^9.4.2:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-fullpage.js@^0.2.17:
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/vue-fullpage.js/-/vue-fullpage.js-0.2.17.tgz#cb6aab10d6824d20fa29adf66322f3fbd9ddd835"
+  integrity sha512-uuwAyWIMJA3y1IQzIxo3bL6vh0t1/1nRAmiQFf254Xq2DQUlvEpo45rX2jUkCCrIEkGEysHwwAnslHKnpjzMVA==
+  dependencies:
+    fullpage.js "^4.0.22"
 
 vue-toastification@^2.0.0-rc.5:
   version "2.0.0-rc.5"
