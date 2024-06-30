@@ -6,7 +6,7 @@
       <span class="story-section__title--highlight">살아가는 가정이 되겠습니다.</span>
     </p>
     <div class="story-section__content-container">
-      <img src="@/assets/images/Rectangle.svg" alt="Background" class="story-section__background">
+      <img src="@/assets/images/story_background.svg" alt="Background" class="story-section__background">
       <div class="story-section__content">
         <p class="story-section__text">
           처음 만났던 날,<br/>
