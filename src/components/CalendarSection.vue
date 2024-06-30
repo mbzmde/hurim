@@ -2,8 +2,8 @@
   <section class="calendar-section">
     <img src="@/assets/line.svg" alt="line" class="calendar-section__line">
     <p class="calendar-section__title">
-      하나님 사랑을 주위에 나누며<br/>
-      <span class="calendar-section__title--highlight">살아가는 가정이 되겠습니다.</span>
+      귀한 발걸음을 통해 첫 출발을<br/>
+      <span class="calendar-section__title--highlight">축복해주시면 감사하겠습니다.</span>
     </p>
     <table id="calendar" class="calendar">
       <caption class="calendar__caption"></caption>
