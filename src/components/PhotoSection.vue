@@ -1,7 +1,7 @@
 <template>
   <section class="photo-section">
     <div class="wedding-date">
-      <h2 class="wedding-date__title">2024. 08. 24. 토요일 · 오후 12시 30분</h2>
+      <h2 class="wedding-date__title">2024. 08. 24. 토요일 · 오후 4시</h2>
       <p class="wedding-date__place">주안 그랜드하우스 7층 단독홀</p>
     </div>
     <img src="@/assets/line.svg" alt="line" class="photo-section__line">
