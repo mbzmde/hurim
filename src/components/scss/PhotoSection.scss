@@ -1,0 +1,72 @@
+.photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.wedding-date {
+  text-align: center;
+}
+
+.wedding-date__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.wedding-date__place {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.wedding-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #BC7F40;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.wedding-title__highlight {
+  font-weight: 700;
+}
+
+.photo-section__line {
+  margin: 24px 0;
+}
+
+.photo-section__thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.photo-section__thumbnail {
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid transparent;
+}
+
+.photo-section__thumbnail--active {
+  border-color: #000;
+  height: 54px;
+}
+
+.photo-section__thumbnail-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.photo-section__slide-img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.carousel__slide {
+  background-color: #fff;
+}
