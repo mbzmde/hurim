@@ -1,9 +1,12 @@
+import 
+
 <template>
     <div class="main_area">
         <div class="img_box">
             <img src="../assets/images/main.jpg" alt="메인이미지">
             <div class="txt_box">
-                <p class="date">08 / 24</p> 
+                <!-- <p class="date">08 / 24</p>  -->
+                <img src="@/assets/wedding-date.svg" alt="결혼일" />
                 <p class="title">승찬 · 지원 결혼합니다</p>
                 <p class="location">주안 그랜드하우스 7층 단독홀</p>
             </div>
@@ -17,6 +20,7 @@
 
 <script>
 export default {
+    name: 'MainComponent',
     setup () {
     }
 }

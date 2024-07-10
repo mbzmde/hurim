@@ -1,7 +1,7 @@
 <template>
     <section class="address_area">
         <div class="txt_address">
-            <p>인천 미추홀구 주안로 103-18 <br> <span>주안 그랜드 하우스</span></p>
+            <p>인천 미추홀구 주안로 128-9 <br> <span>주안 그랜드 하우스</span></p>
             <div class="btn_wrap">
                 <button type="button" class="btn_address_copy" @click="copyAddress">주소 복사하기</button>
             </div>
@@ -24,7 +24,7 @@ import { ref, computed } from 'vue';
 
 export default {
     setup () {
-        const address = ref('인천 미추홀구 주안로 103-18\n주안 그랜드 하우스');
+        const address = ref('인천 미추홀구 주안로 128-9\n주안 그랜드 하우스');
 
         const encodedAddress = computed(() => encodeURIComponent(address.value.replace('\n', ' ')));
 

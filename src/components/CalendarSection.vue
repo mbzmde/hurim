@@ -55,6 +55,7 @@ export default {
         for (let i = 0; i < 7; i++) {
           const cell = document.createElement('td');
           cell.classList.add('calendar__cell');
+          cell.style.height = '50px';
           if (currentDay.getMonth() === month) {
             cell.textContent = currentDay.getDate();
             if (currentDay.getDate() === date.getDate() && currentDay.getMonth() === date.getMonth() && currentDay.getFullYear() === date.getFullYear()) {
@@ -77,6 +78,7 @@ export default {
                 cell.style.color = 'white';
                 cell.style.fontWeight = 'bold';
                 cell.style.padding = '0.5rem !important';
+                cell.style.height = '50px';
               }
             });
           }

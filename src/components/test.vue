@@ -37,7 +37,7 @@
   import home5 from "@/assets/images/img5.jpg";
   
   export default {
-    name: 'App',
+    name: 'TestComponent',
     components: {
       Carousel,
       Slide,
