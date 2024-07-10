@@ -1,13 +1,16 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import VueFullPage from "vue-fullpage.js";
+import VueLazyload from "vue-lazyload";
 
 // Vue Toastification imports
-import Toast, { POSITION } from 'vue-toastification'
-import 'vue-toastification/dist/index.css'
+import Toast, { POSITION } from "vue-toastification";
 
-const app = createApp(App)
+import "vue-toastification/dist/index.css";
+
+const app = createApp(App);
 
 // Toastification options
 const options = {
@@ -19,13 +22,14 @@ const options = {
   draggablePercent: 0.6,
   showCloseButtonOnHover: false,
   hideProgressBar: false,
-  closeButton: 'button',
+  closeButton: "button",
   icon: true,
-  rtl: false
-}
+  rtl: false,
+};
 
 // Use Toastification plugin
-app.use(Toast, options)
+app.use(Toast, options);
+app.use(VueFullPage);
+app.use(VueLazyload);
 
-app.mount('#app')
-
+app.mount("#app");

@@ -12,6 +12,7 @@
   "dependencies": {
     "vue": "^3.4.21",
     "vue-fullpage.js": "^0.2.17",
+    "vue-lazyload": "^3.0.0",
     "vue-toastification": "^2.0.0-rc.5",
     "vue3-carousel": "^0.3.3"
   },

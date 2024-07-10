@@ -1,0 +1,64 @@
+.dday-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  &__line {
+    margin-top: 24px;
+    margin-bottom: 56px;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  &__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__time-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__time {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(188, 127, 64);
+  }
+
+  &__label {
+    font-size: 16px;
+    color: #666;
+    margin-left: 8px;
+  }
+
+  &__colon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 8px;
+  }
+
+  &__message {
+    font-size: 18px;
+    color: #333;
+
+    &--highlight {
+      font-weight: bold;
+      color: rgb(188, 127, 64);
+    }
+  }
+}
