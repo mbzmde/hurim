@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 24px 48px 0;
+  padding: 0 24px;
 }
 
 .place-section__line {
@@ -15,7 +15,7 @@
 }
 
 .place-info__address {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
   color: #393631;
 }
@@ -33,9 +33,9 @@
 
 .btn {
   padding: 8px 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 26px;
   border: 0;
   border-radius: 16px;
   background: #F2EEE8;
@@ -65,24 +65,25 @@
 
 .directions-item__link {
   display: block;
-  padding: 116px 20px 20px;
+  padding: 94px 20px 20px;
 }
 
 .directions-item__img-box {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
 }
 
 .directions-item__img {
+  width:100%;
   border-radius: 16px;
 }
 
 .directions-item__text {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: #393631;

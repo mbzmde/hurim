@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="load_list_wrap">
-            <div class="directions_box" v-for="(item, loadList) in item" :key="loadList">
+            <div class="directions_box" v-for="(item, index) in items" :key="index">
                 <a :href="item.url" target="_blank">
                     <div class="img_box">
                         <img :src="item.imgSrc" alt="길찾기아이콘">
@@ -36,13 +36,25 @@ export default {
             })
         }
         
-        const item = ref([
-            {imgSrc: '../assets/images/ico_tmap.jpg', directionText: 'T맵으로 길 찾기', url: `https://www.tmap.co.kr/searchRoute?endName=${encodedAddress.value}`},
-            {imgSrc: '', directionText: '네이버 지도', url: `https://map.naver.com/v5/search/${encodedAddress.value}`},
-            {imgSrc: '', directionText: '카카오 지도', url: `https://map.kakao.com/link/search/${encodedAddress.value}`},
+        const items = ref([
+            {
+                imgSrc: '../assets/images/ico_tmap.jpg', 
+                directionText: 'T맵으로 길 찾기', 
+                url: `https://www.tmap.co.kr/searchRoute?endName=${encodedAddress.value}`
+            },
+            {
+                imgSrc: '', 
+                directionText: '네이버 지도', 
+                url: `https://map.naver.com/v5/search/${encodedAddress.value}`
+            },
+            {
+                imgSrc: '', 
+                directionText: '카카오 지도', 
+                url: `https://map.kakao.com/link/search/${encodedAddress.value}`
+            },
         ])
 
-        return {address, copyAddress, item}
+        return {address, copyAddress, items}
     }
 }
 </script>

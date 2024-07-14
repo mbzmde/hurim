@@ -1,7 +1,9 @@
 <template>
     <section class="communication_area">
         <p class="dot">/</p>
-        <h2 class="title">저희의 첫 출발을 축하해주시는 <br>마음 감사드립니다.</h2>
+        <p class="title">저희의 첫 출발을 축하해주시는 <br/>
+            <span class="communication-section__title--highlight">마음 감사드립니다.</span>
+        </p>
         <div class="user_list">
             <h3>신랑 측</h3>
             <ul>
@@ -93,9 +95,10 @@ export default {
 </script>
 
 <style scoped>
-    .communication_area{width:100%;padding:0 48px;}
+    .communication_area{width:100%;padding:0 48px 48px;}
     .communication_area .dot{padding-top:24px;text-align:center;}
     .communication_area .title{padding-top:24px;font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
+    .communication-section__title--highlight{font-weight:700}
     .communication_area .user_list{padding-top:16px;}
     .communication_area .user_list h3{font-size:20px;line-height:36px;color:#393631;text-align:center;}
     .communication_area .user_list ul{padding-top:16px;}

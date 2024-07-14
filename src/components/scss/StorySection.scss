@@ -10,7 +10,7 @@
 }
 
 .story-section__title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   color: #BC7F40;
   text-align: center;
@@ -25,6 +25,8 @@
   filter: blur(10px);
   width: 100%;
   height: auto;
+  min-height:500px;
+  max-height:545px;
 }
 
 .story-section__content-container {
@@ -39,7 +41,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 60px 0;
   text-align: center;
   color: #393631;
 }
