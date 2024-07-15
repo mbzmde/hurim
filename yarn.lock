@@ -698,6 +698,11 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
 
+kakao.maps.d.ts@^0.1.39:
+  version "0.1.40"
+  resolved "https://registry.npmjs.org/kakao.maps.d.ts/-/kakao.maps.d.ts-0.1.40.tgz"
+  integrity sha512-nX69MB1ok04epe3OqS+/tEeWBbU31GSQbvDPJmQRRltzzqn6t4jBsO5v1nzalUjCKzwcH2CptOc767NZ7Hbu3g==
+
 keyv@^4.5.3:
   version "4.5.4"
   resolved "https://registry.npmjs.org/keyv/-/keyv-4.5.4.tgz"
@@ -1066,6 +1071,13 @@ vue3-carousel@^0.3.3:
   version "0.3.3"
   resolved "https://registry.npmjs.org/vue3-carousel/-/vue3-carousel-0.3.3.tgz"
   integrity sha512-VsuOBE4LG9lxAiYGR9U7ps4RyJ4oFQGzk79/49ybvoxzNpahPAVWIDHKK3a1lOv0CSplFq6u4FvaFLZ8x3FgWg==
+
+vue3-kakao-maps@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.npmjs.org/vue3-kakao-maps/-/vue3-kakao-maps-2.3.9.tgz"
+  integrity sha512-L+vtpfvmFslXI8nelxyTGfR8mhiJhYVkWyX7jaOLZJgDtj+4VlKoD73xIxEvVzd9qMfVyMDM6x/kNwD9jPuw/w==
+  dependencies:
+    kakao.maps.d.ts "^0.1.39"
 
 which@^2.0.1:
   version "2.0.2"

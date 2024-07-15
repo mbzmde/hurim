@@ -8,6 +8,9 @@ import VueLazyload from "vue-lazyload";
 // Vue Toastification imports
 import Toast, { POSITION } from "vue-toastification";
 
+// kakao map
+import { useKakao } from 'vue3-kakao-maps/@utils';
+
 import "vue-toastification/dist/index.css";
 
 const app = createApp(App);
@@ -26,6 +29,10 @@ const options = {
   icon: true,
   rtl: false,
 };
+
+//kakao map
+useKakao('API key');
+createApp(App).mount('#app');
 
 // Use Toastification plugin
 app.use(Toast, options);
