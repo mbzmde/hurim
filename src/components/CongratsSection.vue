@@ -1,0 +1,78 @@
+<template>
+  <section class="message_section">
+    <img src="@/assets/line.svg" alt="line" style="marginTop: 56px; marginBottom: 56px;" />
+    <p class="message_section__title">지원, 승찬의 첫 출발을<br/>
+      <span class="message_section_-title--highlight">축하해주시면 감사하겠습니다.</span>
+    </p>
+    <p class="message-section__title--highlight">아래 버튼을 통해 새출발을 응원해주세요.</p>
+    <button class="message_section__button" @click="congratulate">함께 축하하기 (클릭)</button>
+    <p class="message_section__title--highlight" style="marginTop: 24px;">총 {{ congratulationCount }}명이 축하해주셨습니다.</p>
+  </section>
+</template>
+
+<script>
+import { ref, onMounted } from 'vue';
+import { useToast } from 'vue-toastification'
+import confetti from "https://cdn.skypack.dev/canvas-confetti";
+import { supabase } from '@/lib/supabase-client';
+
+export default {
+  name: 'CongratsSection',
+  setup () {
+    const toast = useToast();
+    const congratulationCount = ref(0);
+
+    const loadCongratulationCount = async () => {
+      const { data, error } = await supabase
+        .from('202407_roh_shin_wedding_message')
+        .select('*');
+      if (error) {
+        console.error('축하 메시지 조회 실패:', error);
+        return;
+      }
+      congratulationCount.value = data.length;
+    };
+
+    const congratulate = async () => {
+      toast('축하해주셔서 감사합니다!', {
+        position: 'bottom-center',
+        timeout: 2000,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        draggablePercent: 0.6,
+        showCloseButtonOnHover: true,
+        hideProgressBar: true,
+        closeButton: false,
+        icon: true,
+        transition: 'Vue-Toastification__fade',
+        transitionDuration: 300,
+        maxToasts: 3,
+        newestOnTop: true,
+      });
+
+      try {
+        await supabase.from('202407_roh_shin_wedding_message').insert([
+          { created_at: new Date() }
+        ]);
+        await loadCongratulationCount();
+      } catch (err) {
+        console.error('축하 메시지 저장 실패:', err);
+      }
+
+      confetti();
+    }
+
+    onMounted(loadCongratulationCount);
+
+    return {
+      congratulate,
+      congratulationCount
+    }
+  },
+}
+</script>
+
+<style scoped>
+  @import "@/components/scss/CongratsSection.scss";
+</style>

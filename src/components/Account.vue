@@ -1,6 +1,6 @@
 <template>
     <section class="communication_area">
-        <p class="dot">/</p>
+        <img src="@/assets/line.svg" alt="line" style="marginTop: 56px; marginBottom: 24px;" />
         <p class="title">저희의 첫 출발을 축하해주시는 <br/>
             <span class="communication-section__title--highlight">마음 감사드립니다.</span>
         </p>
@@ -95,11 +95,11 @@ export default {
 </script>
 
 <style scoped>
-    .communication_area{width:100%;padding:0 48px 48px;}
+    .communication_area{display: flex;flex-direction:column;width:100%;padding:0 48px 48px;justify-content:center;align-items:center;}
     .communication_area .dot{padding-top:24px;text-align:center;}
     .communication_area .title{padding-top:24px;font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
     .communication-section__title--highlight{font-weight:700}
-    .communication_area .user_list{padding-top:16px;}
+    .communication_area .user_list{padding-top:16px;width:100%}
     .communication_area .user_list h3{font-size:20px;line-height:36px;color:#393631;text-align:center;}
     .communication_area .user_list ul{padding-top:16px;}
     .communication_area .user_list ul li{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 16px 24px;border:2px solid #F2EEE8;border-radius:16px;background-color:#fff;}

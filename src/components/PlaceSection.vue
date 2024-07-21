@@ -12,7 +12,7 @@
     </div>
     <div class="directions-list">
       <div class="directions-item">
-        <a href="https://example.com" target="_blank" class="directions-item__link">
+        <a href="https://tmap.life/44691dda" target="_blank" class="directions-item__link">
           <div class="directions-item__img-box">
             <img src="@/assets/images/place-icon/tmap.svg" alt="길찾기아이콘" class="directions-item__img">
           </div>
@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="directions-item">
-        <a href="https://example.com" target="_blank" class="directions-item__link">
+        <a href="https://naver.me/Fwn79vBY" target="_blank" class="directions-item__link">
           <div class="directions-item__img-box">
             <img src="@/assets/images/place-icon/naver.svg" alt="길찾기아이콘" class="directions-item__img">
           </div>
@@ -28,7 +28,7 @@
         </a>
       </div>
       <div class="directions-item">
-        <a href="https://example.com" target="_blank" class="directions-item__link">
+        <a href="https://place.map.kakao.com/m/621225302" target="_blank" class="directions-item__link">
           <div class="directions-item__img-box">
             <img src="@/assets/images/place-icon/kakao.svg" alt="길찾기아이콘" class="directions-item__img">
           </div>
