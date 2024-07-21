@@ -3,7 +3,7 @@
 #app {
   position:relative;
   background:url(../assets/images/bg.png) no-repeat;
-  background-size:cover;
+  background-size: cover;
   isolation:isolate;
 }
 #app::after{

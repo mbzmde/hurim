@@ -1,28 +1,15 @@
 <template>
-    <section id="test" class="message_area">
-        <p class="dot">/</p>
-        <p class="title">축하의 메시지로 첫 출발을 <br/>
-            <span class="message-section__title--highlight">축하해주시면 감사하겠습니다.</span>
-        </p>
-        <div v-for="(message, index) in messages" :key="index" class="message_box">
-            <div class="user_info">
-                <p class="name">{{ message.name }}</p>
-                <span class="date">{{ message.date }}</span>
-            </div>
-            <p class="comment">{{ message.comment }}</p>
-        </div>
-        <p class="dot">/</p>
-        <div class="inp_box">
-            <input v-model="newMessage.name" type="text" placeholder="이름을 입력해주세요." class="inp_name">
-            <input v-model="newMessage.comment" type="text" placeholder="신랑, 신부에게 축하의 메시지를 남겨주세요." class="inp_comment">
-        </div>
-        <a href="#" class="btn_message" @click.prevent="addMessage">축하 메시지 남기기</a>
-    </section>
+  <section id="test" class="message_area">
+    <img src="@/assets/line.svg" alt="line" style="marginTop: 56px; marginBottom: 56px;" />
+      <p class="title">지원, 승찬의 첫 출발을<br/>
+        <span class="message-section__title--highlight">축하해주시면 감사하겠습니다.</span>
+      </p>
+      <p class="message-section__title--highlight">아래 버튼을 통해 새출발을 응원해주세요.</p>
+  </section>
 </template>
 
 <script>
 import { ref } from 'vue';
-
 export default {
     setup () {
         const newMessage = ref({name: '', comment: ''});
@@ -53,10 +40,12 @@ export default {
 </script>
 
 <style scoped>
-    .message_area{width:100%;padding:0 48px;}
+    .message_area{width:100%;padding:0 48px;  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
     .message-section__title--highlight{font-weight:700}
-    .message_area .dot{padding-top:24px;text-align:center;}
-    .message_area .title{padding-top:24px;font-size:22px;line-height:36px;color:#BC7F40;text-align:center;}
+    .message_area .title{font-size:22px;line-height:36px;color:#BC7F40;text-align:center;}
     .message_area .message_box{margin-top:32px;padding:20px;border:2px solid #F2EEE8;border-radius:8px;background-color:#fff;}
     .message_area .message_box + .message_box{margin-top:16px;}
     .message_area .message_box .user_info{display:flex;justify-content:space-between;font-size:16px;line-height:16px;color:#BC7F40;}
