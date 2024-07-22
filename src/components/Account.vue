@@ -49,7 +49,7 @@ export default {
         const brideAccounts = ref([
         {title: '신부' , name: '신지원', bank: '국민은행', account: '660401-01-871167'},
         {title: '아버님' , name: '신준철', bank: '기업은행', account: '434-101470-01-018'},
-        {title: '어머님' , name: '이선경', bank: '신한은행', account: '623-02-211944'},
+        {title: '어머님' , name: '이성경', bank: '신한은행', account: '623-02-211944'},
         ])
 
         const copyAccountInfo = (user) => {

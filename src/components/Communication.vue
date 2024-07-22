@@ -53,7 +53,7 @@ export default {
         const brideSide = ref([
             {title: '신부', name: '신지원', phone: '010-9975-0173'},
             {title: '아버님', name: '신준철', phone: '010-4829-2116'},
-            {title: '어머님', name: '이선경', phone: '010-4029-2116'},
+            {title: '어머님', name: '이성경', phone: '010-4029-2116'},
         ])
 
         return {groomSide,brideSide}
