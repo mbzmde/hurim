@@ -28,7 +28,7 @@
         </p>
         <div class="story-section__names">
           <p class="story-section__name">노수련 · 김유미 의 장남 노승찬</p>
-          <p class="story-section__name">신준철 · 이선경 의 장녀 신지원</p>
+          <p class="story-section__name">신준철 · 이성경 의 장녀 신지원</p>
         </div>
       </div>
     </div>

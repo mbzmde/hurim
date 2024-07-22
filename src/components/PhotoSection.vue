@@ -39,7 +39,7 @@ export default {
     const currentIndex = ref(0)
 
     const loadSlides = async () => {
-      const imagesContext = import.meta.glob('@/assets/images/photo-slide/*.jpg')
+      const imagesContext = import.meta.glob('@/assets/images/photo-slide/*.{jpg,png,JPG}')
       const keys = Object.keys(imagesContext)
       return Promise.all(keys.map(async (key, index) => {
         const module = await imagesContext[key]()
@@ -129,8 +129,8 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 647px;
-  max-height: 647px;
+  /* min-height: 647px;
+  max-height: 647px; */
   background: #fff;
 }
 
@@ -158,6 +158,7 @@ export default {
 .photo-section__thumbnails {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
