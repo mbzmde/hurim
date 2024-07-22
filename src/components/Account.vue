@@ -42,14 +42,14 @@ export default {
         const toast = useToast();
         const groomAccounts = ref([
             {title: '신랑' , name: '노승찬', bank: '국민은행', account: '224602-04-219606'},
-            {title: '아버님' , name: '노수련', bank: '국민', account: '33'},
-            {title: '어머님' , name: '김유미', bank: '국민', account: '4'},
+            {title: '아버님' , name: '노수련', bank: '국민은행', account: '224-21-0824-372'},
+            {title: '어머님' , name: '김유미', bank: '국민은행', account: '224-01-0411-459'},
         ]);
 
         const brideAccounts = ref([
-        {title: '신부' , name: '신지원', bank: '국민', account: '5'},
-        {title: '아버님' , name: '신준철', bank: '국민', account: '6'},
-        {title: '어머님' , name: '이선경', bank: '국민', account: '7'},
+        {title: '신부' , name: '신지원', bank: '국민은행', account: '660401-01-871167'},
+        {title: '아버님' , name: '신준철', bank: '기업은행', account: '434-101470-01-018'},
+        {title: '어머님' , name: '이선경', bank: '신한은행', account: '623-02-211944'},
         ])
 
         const copyAccountInfo = (user) => {

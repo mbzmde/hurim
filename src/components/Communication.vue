@@ -10,10 +10,10 @@
                 <li v-for="(user, index) in groomSide" :key="index">
                     <p class="user_name">{{ user.title }} · {{ user.name }}</p>
                     <div class="communication_wrap">
-                        <a :href="`tel:$(user.phone)`">
+                        <a :href="`tel:${user.phone}`">
                             <span class="call">전화</span>
                         </a>
-                        <a :href="`sms:$(user.phone)`">
+                        <a :href="`sms:${user.phone}`">
                             <span class="message">문자</span>
                         </a>
                     </div>
@@ -26,10 +26,10 @@
                 <li v-for="(user, index) in brideSide" :key="index">
                     <p class="user_name">{{ user.title }} · {{ user.name }}</p>
                     <div class="communication_wrap">
-                        <a :href="`tel:$(user.phone)`">
+                        <a :href="`tel:${user.phone}`">
                             <span class="call">전화</span>
                         </a>
-                        <a :href="`sms:$(user.phone)`">
+                        <a :href="`sms:${user.phone}`">
                             <span class="message">문자</span>
                         </a>
                     </div>
