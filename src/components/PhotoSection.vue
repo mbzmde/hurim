@@ -129,9 +129,8 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* min-height: 647px;
-  max-height: 647px; */
-  background: #fff;
+  min-height:647px;
+  background: transparent;
 }
 
 .photo-section__slide-img {

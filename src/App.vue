@@ -46,7 +46,7 @@ if (audio) {
     </div>
     <div class="inner" :class="{ 'content-visible': !showSplash }">
       <HeroSection/>
-      <PhotoSection />
+      <FadeInSection><PhotoSection /></FadeInSection>
       <FadeInSection><StorySection /></FadeInSection>
       <FadeInSection><CalendarSection /></FadeInSection>
       <FadeInSection><DdaySection /></FadeInSection>
