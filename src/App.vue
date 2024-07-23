@@ -12,6 +12,7 @@ import DdaySection from '@/components/DdaySection.vue';
 import TypingText from '@/components/TypingText.vue';
 import CongratsSection from '@/components/CongratsSection.vue';
 import audioFile from '@/assets/audio/audio.mp3'
+import FadeInSection from './components/FadeInSection.vue';
 
 const showSplash = ref(true);
 
@@ -20,7 +21,7 @@ const weddingText = "아름다운 서약을 하는 8월 24일, 소중한 여러�
 onMounted(() => {
   setTimeout(() => {
     showSplash.value = false;
-  }, 4000);
+  }, 6000);
 });
 
 // 배경음악 재생
@@ -46,14 +47,13 @@ if (audio) {
     <div class="inner" :class="{ 'content-visible': !showSplash }">
       <HeroSection/>
       <PhotoSection />
-      <StorySection />
-      <CalendarSection />
-      <DdaySection />
-      <PlaceSection />
-      <CongratsSection />
-      <Message class="section" />
-      <Communication class="section" />
-      <Account class="section" />
+      <FadeInSection><StorySection /></FadeInSection>
+      <FadeInSection><CalendarSection /></FadeInSection>
+      <FadeInSection><DdaySection /></FadeInSection>
+      <FadeInSection><PlaceSection /></FadeInSection>
+      <FadeInSection><Communication /></FadeInSection>
+      <FadeInSection><Account /></FadeInSection>
+      <FadeInSection><CongratsSection /></FadeInSection>
     </div>
   </div>
 </template>

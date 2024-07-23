@@ -1,7 +1,7 @@
 <template>
   <section class="message_section">
-    <img src="@/assets/line.svg" alt="line" style="marginTop: 56px; marginBottom: 56px;" />
-    <p class="message_section__title">지원, 승찬의 첫 출발을<br/>
+    <img src="@/assets/line.svg" alt="line" style="marginTop: 46px; marginBottom: 42px;" />
+    <p class="message_section__title">승찬, 지원의 첫 출발을<br/>
       <span class="message_section_-title--highlight">축하해주시면 감사하겠습니다.</span>
     </p>
     <p class="message-section__title--highlight">아래 버튼을 통해 새출발을 응원해주세요.</p>

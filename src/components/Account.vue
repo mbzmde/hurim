@@ -95,9 +95,9 @@ export default {
 </script>
 
 <style scoped>
-    .communication_area{display: flex;flex-direction:column;width:100%;padding:0 48px 48px;justify-content:center;align-items:center;}
+    .communication_area{display: flex;flex-direction:column;width:100%;padding:0 48px;justify-content:center;align-items:center;}
     .communication_area .dot{padding-top:24px;text-align:center;}
-    .communication_area .title{padding-top:24px;font-size:24px;line-height:36px;color:#BC7F40;text-align:center;}
+    .communication_area .title{padding-top:24px;font-size:22px;line-height:36px;color:#BC7F40;text-align:center;}
     .communication-section__title--highlight{font-weight:700}
     .communication_area .user_list{padding-top:16px;width:100%}
     .communication_area .user_list h3{font-size:20px;line-height:36px;color:#393631;text-align:center;}

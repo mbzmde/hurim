@@ -7,7 +7,7 @@
 }
 
 .place-section__line {
-  margin: 24px 0;
+  margin: 24px 0 42px;
 }
 
 .place-info {
@@ -65,15 +65,15 @@
 
 .directions-item__link {
   display: block;
-  padding: 94px 20px 20px;
+  padding: 90px 20px 20px;
 }
 
 .directions-item__img-box {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
 }
 
 .directions-item__img {
@@ -83,7 +83,7 @@
 
 .directions-item__text {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #393631;
@@ -94,8 +94,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   background: url(@/assets/images/ico_arrow.jpg) no-repeat 50% 50%;
   background-size: contain;
 }
