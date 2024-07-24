@@ -13,7 +13,7 @@
           서로가 기도하며 꿈꿔온<br/>
           믿음의 가정에 대해 나누며<br/>
           약 2년이라는 시간 동안<br/>
-          서로의 햇빛과 나무가 돼주었고
+          서로의 햇빛과 나무가 되어 주었고
         </p>
         <p class="story-section__text">
           2024년 08월 24일<br/>
@@ -27,8 +27,8 @@
           저희의 시작을 축복해 주시면 감사하겠습니다.
         </p>
         <div class="story-section__names">
-          <p class="story-section__name">노수련 · 김유미 의 장남 노승찬</p>
-          <p class="story-section__name">신준철 · 이성경 의 장녀 신지원</p>
+          <p class="story-section__name">노수련 · 김유미 의 아들 노승찬</p>
+          <p class="story-section__name">신준철 · 이성경 의 딸 신지원</p>
         </div>
       </div>
     </div>
