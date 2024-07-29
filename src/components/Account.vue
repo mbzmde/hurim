@@ -1,30 +1,30 @@
 <template>
     <section class="communication_area">
         <img src="@/assets/line.svg" alt="line" style="marginTop: 56px; marginBottom: 24px;" />
-        <p class="title">저희의 첫 출발을 축하해주시는 <br/>
-            <span class="communication-section__title--highlight">마음 감사드립니다.</span>
+        <p class="title">Бэлэг бэлгийн дээд бэлэн мөнгө<br/>
+            <span class="communication-section__title--highlight">Та бүхэнд дансны мэдээллээ үлдээлээ.</span>
         </p>
         <div class="user_list">
-            <h3>신랑 측</h3>
+            <h3>Нөхрийн тал</h3>
             <ul>
-                <li v-for="(user, index) in groomAccounts" :key="index">
-                    <p class="user_name">{{ user.title }} · {{ user.name }}</p>
+                <li >
+                    <p class="user_name">Раднаабазар Мөнхбат</p>
                     <div class="communication_wrap">
-                        <a href="#" @click.prevent="copyAccountInfo(user)">
-                            <span class="call">계좌</span>
+                        <a href="#" @click.prevent="copyAccountInfo(user)" v-for="(user, index) in groomAccounts" :key="index">
+                   <img :src="user.icon" alt="Icon" />
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="user_list">
-            <h3>신부 측</h3>
+            <h3>Эхнэрийн тал</h3>
             <ul>
-                <li v-for="(user, index) in brideAccounts" :key="index">
-                    <p class="user_name">{{ user.title }} · {{ user.name }}</p>
+                <li >
+                    <p class="user_name">Соронзонболд Азжаргал</p>
                     <div class="communication_wrap">
-                        <a href="#" @click.prevent="copyAccountInfo(user)">
-                            <span class="call">계좌</span>
+                        <a href="#" @click.prevent="copyAccountInfo(user)" v-for="(user, index) in brideAccounts" :key="index">
+                            <img :src="user.icon" alt="Icon" />
                         </a>
                     </div>
                 </li>
@@ -41,22 +41,22 @@ export default {
     setup () {
         const toast = useToast();
         const groomAccounts = ref([
-            {title: '신랑' , name: '노승찬', bank: '국민은행', account: '224602-04-219606'},
-            {title: '아버님' , name: '노수련', bank: '국민은행', account: '224-01-0411-459'},
-            {title: '어머님' , name: '김유미', bank: '국민은행', account: '224-21-0824-372'},
+            {title: 'Р' , name: 'Мөнхбат', bank: 'Хаан банк', account: '9999999999', icon: 'src/assets/images/place-icon/khaan.png' },
+            {title: 'Р' , name: 'Мөнхбат', bank: 'Голомт банк', account: '9999999999', icon: 'src/assets/images/place-icon/golomt.png'},
+            {title: 'Р' , name: 'Мөнхбат', bank: 'Худалдаа хөгжлийн банк', account: '9999999999', icon: 'src/assets/images/place-icon/tdb.png'},
         ]);
 
         const brideAccounts = ref([
-        {title: '신부' , name: '신지원', bank: '국민은행', account: '660401-01-871167'},
-        {title: '아버님' , name: '신준철', bank: '기업은행', account: '434-101470-01-018'},
-        {title: '어머님' , name: '이성경', bank: '신한은행', account: '623-02-211944'},
+        {title: 'C' , name: 'Азжаргал', bank: 'Хаан банк', account: '9999999999', icon: 'src/assets/images/place-icon/khaan.png'},
+        {title: 'C' , name: 'Азжаргал', bank: 'Голомт банк', account: '9999999999', icon: 'src/assets/images/place-icon/golomt.png'},
+        {title: 'C' , name: 'Азжаргал', bank: 'Худалдаа хөгжлийн банк', account: '9999999999', icon: 'src/assets/images/place-icon/tdb.png'},
         ])
 
         const copyAccountInfo = (user) => {
-        const accountInfo = `은행: ${user.bank}\n계좌번호: ${user.account}`
+        const accountInfo = `${user.account}`
       
         navigator.clipboard.writeText(accountInfo).then(() => {
-            toast(`복사완료! ${user.bank} ${user.account}`, {
+            toast(`Амжилттай хуулагдлаа! ${user.bank} ${user.account}`, {
                 position: 'bottom-center',
                 timeout: 5000,
                 closeOnClick: true,

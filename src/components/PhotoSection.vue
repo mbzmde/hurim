@@ -1,13 +1,13 @@
 <template>
   <section class="photo-section">
     <div class="wedding-date">
-      <h2 class="wedding-date__title">2024. 08. 24. 토요일 · 오후 4시</h2>
-      <p class="wedding-date__place">주안 그랜드하우스 7층 단독홀</p>
+      <h2 class="wedding-date__title">2024 oны 09-р сарын 09-ний Даваа гарагт</h2>
+      <p class="wedding-date__place">UG PALACE</p>
     </div>
     <img src="@/assets/line.svg" alt="line" class="photo-section__line">
     <p class="wedding-title">
-      그 어떤 순간에도 하나님 안에서<br/>
-      <span class="wedding-title__highlight">행복하게 잘 살겠습니다.</span>
+      Бидний гэрлэх ёслолын хүндэтгэлийн үйл ажиллагаанд хүрэлцэн ирэхийг урьж байна.
+      <!-- <span class="wedding-title__highlight"></span> -->
     </p>
     
     <div class="image-slider">

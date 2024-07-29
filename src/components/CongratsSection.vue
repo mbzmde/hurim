@@ -1,12 +1,12 @@
 <template>
   <section class="message_section">
     <img src="@/assets/line.svg" alt="line" style="marginTop: 46px; marginBottom: 42px;" />
-    <p class="message_section__title">승찬, 지원의 첫 출발을<br/>
-      <span class="message_section_-title--highlight">축하해주시면 감사하겠습니다.</span>
+    <p class="message_section__title">Р.Мөнхбат & С.Азжаргал-д<br/>
+      <span class="message_section_-title--highlight">аз жаргал бэлэглэх.</span>
     </p>
-    <p class="message-section__title--highlight">아래 버튼을 통해 새출발을 응원해주세요.</p>
-    <button class="message_section__button" @click="congratulate">함께 축하하기 (클릭)</button>
-    <p class="message_section__title--highlight" style="marginTop: 24px;">총 {{ congratulationCount }}명이 축하해주셨습니다.</p>
+    <p class="message-section__title--highlight">Доорх товчийг дарж бидэнд аз жаргал бэлэглээрэй.</p>
+    <button class="message_section__button" @click="congratulate">Аз жаргал бэлэглэх</button>
+    <p class="message_section__title--highlight" style="marginTop: 24px;">Нийт {{ congratulationCount }} удаа бэлэглэсэн байна.</p>
   </section>
 </template>
 
@@ -34,7 +34,7 @@ export default {
     };
 
     const congratulate = async () => {
-      toast('축하해주셔서 감사합니다!', {
+      toast('АЗ ЖАРГАЛ БЭЛЭГЛЭЖ БАЙНА!', {
         position: 'bottom-center',
         timeout: 2000,
         closeOnClick: true,

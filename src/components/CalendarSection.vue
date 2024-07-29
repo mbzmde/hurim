@@ -2,20 +2,20 @@
   <section class="calendar-section">
     <img src="@/assets/line.svg" alt="line" class="calendar-section__line">
     <p class="calendar-section__title">
-      귀한 발걸음을 통해 첫 출발을<br/>
-      <span class="calendar-section__title--highlight">축복해주시면 감사하겠습니다.</span>
+      Онгоц одтой, улаан хулгана луу,<br/>
+      <span class="calendar-section__title--highlight">Шүтэн барилдлагын хуран үйлдэхүй өдөр</span>
     </p>
     <table id="calendar" class="calendar">
       <caption class="calendar__caption"></caption>
       <thead>
         <tr>
-          <th>일</th>
-          <th>월</th>
-          <th>화</th>
-          <th>수</th>
-          <th>목</th>
-          <th>금</th>
-          <th>토</th>
+          <th>Ням</th>
+          <th>Да</th>
+          <th>Мя</th>
+          <th>Лха</th>
+          <th>Пү</th>
+          <th>Ба</th>
+          <th>Бя</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -29,11 +29,11 @@ import { onMounted } from 'vue';
 export default {
   name: 'CalendarSection',
   setup() {
-    const date = new Date(2024, 7, 24);
+    const date = new Date(2024, 8, 24);
     const month = date.getMonth();
     const year = date.getFullYear();
 
-    const holidays = [{ month: 7, day: 24 }];
+    const holidays = [{ month: 8, day: 9 }];
 
     const updateCalendar = (month, year) => {
       const firstDay = new Date(year, month, 1);
@@ -42,7 +42,7 @@ export default {
       const caption = calendar.querySelector('.calendar__caption');
       const tbody = calendar.querySelector('tbody');
       tbody.innerHTML = '';
-      caption.textContent = `${year}년 ${month + 1}월`;
+      caption.textContent = `${year} оны ${month + 1} сар`;
 
       let currentDay = new Date(firstDay);
 

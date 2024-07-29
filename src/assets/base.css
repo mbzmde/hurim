@@ -85,7 +85,7 @@ font
   font-weight: 500; /* B = Bold */
   font-style: normal;
   font-display: block;
-  src: url('../assets/fonts/SeoulHangang-B.ttf') format('truetype'),
+  src: url('../assets/fonts/Manrope-Bold.ttf') format('truetype'),
 }
 
 @font-face {
@@ -93,7 +93,7 @@ font
   font-weight: 300; /* BL = Light */
   font-style: normal;
   font-display: block;
-  src: url('../assets/fonts/SeoulHangang-BL.ttf') format('truetype'),
+  src: url('../assets/fonts/Manrope-Light.ttf') format('truetype'),
 }
 
 @font-face {
@@ -101,7 +101,7 @@ font
   font-weight: 700; /* EB = Extra Bold */
   font-style: normal;
   font-display: block;
-  src: url('../assets/fonts/SeoulHangang-EB.ttf') format('truetype'),
+  src: url('../assets/fonts/Manrope-ExtraBold.ttf') format('truetype'),
 }
 
 @font-face {
@@ -109,7 +109,7 @@ font
   font-weight: 200; /* L = Light */
   font-style: normal;
   font-display: block;
-  src: url('../assets/fonts/SeoulHangang-L.ttf') format('truetype'),
+  src: url('../assets/fonts/Manrope-Light.ttf') format('truetype'),
 }
 
 @font-face {
@@ -117,7 +117,7 @@ font
   font-weight: 400; /* M = Medium */
   font-style: normal;
   font-display: block;
-  src: url('../assets/fonts/SeoulHangang-M.ttf') format('truetype'),
+  src: url('../assets/fonts/Manrope-Medium.ttf') format('truetype'),
 }
 .example {
   font-family: 'SeoulHangang', sans-serif;

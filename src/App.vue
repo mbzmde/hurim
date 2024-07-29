@@ -16,12 +16,12 @@ import FadeInSection from './components/FadeInSection.vue';
 
 const showSplash = ref(true);
 
-const weddingText = "아름다운 서약을 하는 8월 24일, 소중한 여러분을 초대합니다.";
+const weddingText = "Бидний хуриманд хүрэлцэн ирэхийг урьж байна.";
 
 onMounted(() => {
   setTimeout(() => {
     showSplash.value = false;
-  }, 6000);
+  }, 5000);
 });
 
 // 배경음악 재생
